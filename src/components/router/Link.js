@@ -1,11 +1,7 @@
 import React, {Component} from 'react'
 
 export class Link extends Component{
-	// static contextTypes = {
-	// 	route : React.PropTypes.string,
-	// 	linkHandler : React.PropTypes.func
-	// }
-
+	
 	handleClick = (e) => {
 		e.preventDefault();
 		window.history.pushState(null, '', this.props.to)
